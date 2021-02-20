@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: var(--space-8x);
-  color: var(--brand);
+  color: white;
 }
 
 .description {
@@ -51,8 +51,12 @@
 .description-separator {
   height: 24px;
   width: 1px;
-  background: var(--secondary-color);
+  background: var(--accents-2);
   margin: 0 var(--space-4x);
+}
+
+.logo {
+  padding: 50px 0 80px;
 }
 
 .info :global(p) {
@@ -69,7 +73,7 @@
 
   .info {
     font-size: 24px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
 
   .description {

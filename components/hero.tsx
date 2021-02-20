@@ -22,30 +22,17 @@ import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
 export default function Hero() {
   return (
     <div className={styles.wrapper}>
-      <h2
-        className={cn(
-          styleUtils.appear,
-          styleUtils['appear-third'],
-          styleUtils['show-on-mobile'],
-          styles.description
-        )}
-      >
-        {SITE_DESCRIPTION}
-      </h2>
-      <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        The first {BRAND_NAME}
-        <br className={styleUtils['show-on-desktop']} /> global user conference
-      </h1>
-      <h2
-        className={cn(
-          styleUtils.appear,
-          styleUtils['appear-third'],
-          styleUtils['show-on-tablet'],
-          styles.description
-        )}
-      >
-        {SITE_DESCRIPTION}
-      </h2>
+      <div className={cn(styleUtils.appear, styleUtils['appear-third'], styles.logo)}>
+        <img src="/icons.svg" alt="" style={{ position: 'absolute', right: 0, top: 10 }} />
+        <div style={{ display: 'flex', width: 1024, justifyContent: 'space-between' }}>
+          <img
+            src="/iwd-logo.svg"
+            alt="Women Techmakers - Internation Women's Day LATAM 2021"
+            style={{ width: '50%' }}
+          />
+          <img src="/slogan.svg" alt="Courage to create" style={{ maxWidth: 350 }} />
+        </div>
+      </div>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
         <p>{DATE}</p>
         <div className={styles['description-separator']} />

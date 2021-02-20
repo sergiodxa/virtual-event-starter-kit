@@ -15,7 +15,7 @@
  */
 
 .background {
-  background: #000;
+  background: linear-gradient(90deg, #3E80F2 41.87%, #48BDF4 119.76%, #00E5B0 188.31%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);;
   color: #fff;
   min-height: 100vh;
   min-height: var(--100vh);
@@ -45,8 +45,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--sidebar);
-  border-bottom: 1px solid var(--accents-7);
+  background: rgba(0, 0, 0, 0.5);
+  /* border-bottom: 1px solid var(--accents-7); */
   height: var(--header-height);
   z-index: 2;
 }
